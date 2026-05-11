@@ -13,7 +13,7 @@ const SONGS = {
   wim: {
     title: "World is Mine — ryo (supercell)",
     syllables: "se ka a i de e i chi ba n o hi me sa ma a",
-    notes: "F5 C7 C7 F5 D#5 D#5 F5 F5 F5 G5 G#5 G5 F5 D#5 C7 C7",
+    notes: "F5 C6 C6 F5 D#5 D#5 F5 F5 F5 G5 G#5 G5 F5 D#5 C6 C6",
     // notes: "F4 C5 C5 F4 D#4 D#4 F4 F4 F4 G4 G#4 G4 F4 D#4 C5 C5",
     tempo: 138
   },
