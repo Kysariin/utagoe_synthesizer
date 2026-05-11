@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歌声シンセサイザー — Japanese Singing Synthesizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>歌声シンセサイザー</h1>
+  <p class="subtitle">Japanese Singing Voice Synthesizer · WebAudio</p>
+
+  <div class="controls">
+    <div class="field">
+      <label for="songSelect">Song</label>
+      <select id="songSelect">
+        <option value="">— custom —</option>
+        <option value="wim">World is Mine</option>
+        <option value="sakura">Sakura</option>
+        <option value="melt">Melt</option>
+        <option value="rolling">Rolling Girl</option>
+        <option value="twinkle">Twinkle Twinkle</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="syllablesInput">Syllables</label>
+      <input id="syllablesInput" type="text"
+             value="sa ku ra a sa ku ra a ya yo i no so ra a wa"
+             placeholder="sa ku ra ...">
+    </div>
+    <div class="field">
+      <label for="notesInput">Melody</label>
+      <input id="notesInput" type="text"
+             value="A4 A4 B4 B4 A4 A4 B4 B4 A4 B4 C5 B4 A4 B4 A4 F4"
+             placeholder="C4 D4 E4 ...">
+    </div>
+    <div class="field field--note-grid">
+      <div></div>
+      <div id="noteGrid"></div>
+    </div>
+    <div class="field">
+      <label for="tempoInput">Tempo</label>
+      <input id="tempoInput" type="range" min="60" max="200" value="120">
+      <span id="tempoValue">120</span> BPM
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="singBtn">▶ SING</button>
+    <button id="stopBtn">■ STOP</button>
+    <button id="sourceToggle" data-mode="synth">[SYNTH] / VOICE</button>
+  </div>
+
+  <canvas id="fftCanvas" width="640" height="200"></canvas>
+  <p id="status">ready</p>
+
+  <!-- ES modules require HTTP — open via VS Code Live Server or: npx serve . -->
+  <script type="module" src="src/ui.js"></script>
+
+</body>
+</html>
