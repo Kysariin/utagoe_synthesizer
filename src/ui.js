@@ -32,7 +32,7 @@ const SONGS = {
   rolling: {
     title: "Rolling Girl — wowaka",
     syllables: "sa a wa gu u a ta ma no na ka o ka ki ma wa shi te ka ki ma wa shi te e",
-    notes: "A4 A4 F#5 E5 E5 C#5 D5 C#5 C#5 C#5 A4 A4 G4 B4 A4 D4 D4 D4 D4 B4 A4 A4 D6 D6 C#6",
+    notes: "A4 A4 F#5 E5 E5 C#5 D5 C#5 C#5 C#5 A4 A4 G4 B4 A4 D4 D4 D4 D4 B4 A4 A4 D5 D5 C#5",
     tempo: 180
   },
   twinkle: {
